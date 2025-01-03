@@ -23,17 +23,11 @@ const Usuarios = sequelize.define('Usuarios', {
   },
   id_rol:{
     type: DataTypes.INTEGER,
-    references:{
-        model: Roles,
-        key: 'id_rol',
-    }
+    allowNull: false,
   },
   id_empleado: {
     type: DataTypes.INTEGER,
-    references : {
-        model: Empleado,
-        key: 'id_empleado',
-    },
+    allowNull: false,
   },
 }, {
   tableName: 'usuarios',

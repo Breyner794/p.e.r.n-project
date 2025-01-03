@@ -81,7 +81,7 @@ const getUsuariosById = async(req, res) =>{
                     as: 'empleado'  // Este debe coincidir con el alias que definiste en las relaciones
                 }
             ] 
-        })
+        });
         if (!Usuario){
             return res.status(404).json({message: 'Usuario no encontrado'});
         }

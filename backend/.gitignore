@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Dependencies
 /node_modules
 
@@ -5,3 +6,5 @@ frontend-backup/
 
 # Environment variables
 .env
+=======
+
