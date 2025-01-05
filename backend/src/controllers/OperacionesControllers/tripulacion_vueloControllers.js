@@ -50,7 +50,6 @@ const deleteTripulacion = async (req, res) => {
       if (!deletetripulacion) {
         res.status(404).json({ error: 'Tripulacion de vuelo no Encontrado' });
     }
-        
         const tripulacionData = deletetripulacion.toJSON();
 
         await deletetripulacion.destroy();
